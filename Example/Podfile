@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'CLOutil_Example' do
+  pod 'CLOutil', :path => '../'
+
+  target 'CLOutil_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
